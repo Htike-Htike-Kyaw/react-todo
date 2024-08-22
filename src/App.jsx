@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Heading from './components/Heading'
 import CreateText from './components/CreateText'
 import TaskList from './components/TaskList'
+import Counter from './components/Counter'
 
 const App = () => {
   const [tasks, setTask ] = useState([
@@ -25,6 +26,7 @@ const doneTask = (id)=>{
 
   return (
     <div className='p-10'>
+      {/* <Counter /> */}
       <Heading />
       <CreateText addTask={addTask} />
       <TaskList doneTask={doneTask} removeTask={removeTask} tasks={tasks}  />
